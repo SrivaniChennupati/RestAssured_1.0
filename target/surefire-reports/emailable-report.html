@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">4</td><td class="num">6,421</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.rest.qa.getAPI.GetAPITest</td><td><a href="#m0">noofcircuitsyeartest</a></td><td rowspan="3">1685916719679</td><td rowspan="3">818</td></tr><tr class="failedeven"><td><a href="#m1">noofcircuitsyeartest</a></td></tr><tr class="failedeven"><td><a href="#m2">noofcircuitsyeartest</a></td></tr><tr class="failedodd"><td rowspan="1">com.rest.qa.schema.CheckSchemaTest</td><td><a href="#m3">bookingSchemaTest</a></td><td rowspan="1">1685916722426</td><td rowspan="1">293</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.rest.qa.getAPI.GetAPITest</td><td><a href="#m4">getAPICircuitTest_1</a></td><td rowspan="1">1685916716317</td><td rowspan="1">2523</td></tr><tr class="passedeven"><td><a href="#m5">getAPICircuitTest_2</a></td><td rowspan="1">1685916718841</td><td rowspan="1">441</td></tr><tr class="passedeven"><td><a href="#m6">getAPICircuitTest_3</a></td><td rowspan="1">1685916719282</td><td rowspan="1">393</td></tr><tr class="passedodd"><td rowspan="2">com.rest.qa.postAPI.PostAPIBDDTest</td><td><a href="#m7">tokenPostAPITest_01</a></td><td rowspan="1">1685916721372</td><td rowspan="1">727</td></tr><tr class="passedodd"><td><a href="#m8">tokenPostAPITest_File_02</a></td><td rowspan="1">1685916722100</td><td rowspan="1">325</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">com.rest.qa.getAPI.GetAPITest#noofcircuitsyeartest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2017</td><td>20</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [20] but found [null]
+	at com.rest.qa.getAPI.GetAPITest.noofcircuitsyeartest(GetAPITest.java:121)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.rest.qa.getAPI.GetAPITest#noofcircuitsyeartest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1966</td><td>9</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [9] but found [null]
+	at com.rest.qa.getAPI.GetAPITest.noofcircuitsyeartest(GetAPITest.java:121)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.rest.qa.getAPI.GetAPITest#noofcircuitsyeartest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2016</td><td>21</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [21] but found [null]
+	at com.rest.qa.getAPI.GetAPITest.noofcircuitsyeartest(GetAPITest.java:121)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.rest.qa.schema.CheckSchemaTest#bookingSchemaTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at com.rest.qa.schema.CheckSchemaTest.bookingSchemaTest(CheckSchemaTest.java:43)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.rest.qa.getAPI.GetAPITest#getAPICircuitTest_1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.rest.qa.getAPI.GetAPITest#getAPICircuitTest_2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.rest.qa.getAPI.GetAPITest#getAPICircuitTest_3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.rest.qa.postAPI.PostAPIBDDTest#tokenPostAPITest_01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.rest.qa.postAPI.PostAPIBDDTest#tokenPostAPITest_File_02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.rest.qa.getAPI.GetAPITest">
+        <methods>
+          <include name="noofcircuitsyeartest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.rest.qa.getAPI.GetAPITest -->
+      <class name="com.rest.qa.schema.CheckSchemaTest">
+        <methods>
+          <include name="bookingSchemaTest"/>
+        </methods>
+      </class> <!-- com.rest.qa.schema.CheckSchemaTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

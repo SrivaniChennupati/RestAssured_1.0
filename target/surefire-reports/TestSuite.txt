@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 6.799 sec <<< FAILURE!
+noofcircuitsyeartest(com.rest.qa.getAPI.GetAPITest)  Time elapsed: 0.823 sec  <<< FAILURE!
+java.lang.AssertionError: expected [20] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.rest.qa.getAPI.GetAPITest.noofcircuitsyeartest(GetAPITest.java:121)
+
+noofcircuitsyeartest(com.rest.qa.getAPI.GetAPITest)  Time elapsed: 0.445 sec  <<< FAILURE!
+java.lang.AssertionError: expected [21] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.rest.qa.getAPI.GetAPITest.noofcircuitsyeartest(GetAPITest.java:121)
+
+noofcircuitsyeartest(com.rest.qa.getAPI.GetAPITest)  Time elapsed: 0.423 sec  <<< FAILURE!
+java.lang.AssertionError: expected [9] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.rest.qa.getAPI.GetAPITest.noofcircuitsyeartest(GetAPITest.java:121)
+
+bookingSchemaTest(com.rest.qa.schema.CheckSchemaTest)  Time elapsed: 0.294 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at com.rest.qa.schema.CheckSchemaTest.bookingSchemaTest(CheckSchemaTest.java:43)
+
